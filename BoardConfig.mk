@@ -57,6 +57,45 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
+# TWRP Configuration
+TW_DEVICE_VERSION := By Kato
+#TW_DEFAULT_DEVICE_NAME := pokerp_64
+TW_THEME := portrait_hdpi
+TW_EXTRA_LANGUAGES := true
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_INPUT_BLACKLIST := "hbtp_vm"
+RECOVERY_SDCARD_ON_DATA := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_USE_TOOLBOX := true
+TW_Y_OFFSET := 54
+TW_H_OFFSET := -54
+TW_NO_SCREEN_BLANK := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
+TARGET_USES_MKE2FS := true
+#TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_SKIP_COMPATIBILITY_CHECK := true
+#TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TW_NO_BATT_PERCENT := false
+TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_SUPERSU := true
+TW_INCLUDE_REPACKTOOLS := true
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_LIBRESETPROP := true
+#W_OVERRIDE_SYSTEM_PROPS += "ro.build.fingerprint"
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_DEFAULT_BRIGHTNESS := 125
+TW_MAX_BRIGHTNESS := 255
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TW_INTERNAL_STORAGE_PATH := "/data/media/0"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_OVERRIDE_SYSTEM_PROPS := \
+    "ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 #BOARD_USES_METADATA_PARTITION := true
