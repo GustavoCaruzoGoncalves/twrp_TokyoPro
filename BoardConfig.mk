@@ -7,6 +7,9 @@
 
 DEVICE_PATH := device/TCL/TokyoPro
 
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
+
 #Security Patch Level
 PLATFORM_VERSION := 9.0.0
 PLATFORM_SECURITY_PATCH := 2022-12-05
@@ -60,8 +63,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/erecovery.fstab
 
 # TWRP Configuration
-TW_DEVICE_VERSION := By Kato
-#TW_DEFAULT_DEVICE_NAME := pokerp_64
+TW_DEVICE_VERSION := By Caruzo
+#TW_DEFAULT_DEVICE_NAME := TokyoPro
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
