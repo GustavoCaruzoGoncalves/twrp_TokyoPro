@@ -7,6 +7,8 @@
 
 DEVICE_PATH := device/TCL/TokyoPro
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := TokyoPro
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
