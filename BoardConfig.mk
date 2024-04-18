@@ -7,8 +7,14 @@
 
 DEVICE_PATH := device/TCL/TokyoPro
 
+#Security Patch Level
+PLATFORM_VERSION := 9.0.0
+PLATFORM_SECURITY_PATCH := 2022-12-05
+VENDOR_SECURITY_PATCH := 2022-12-05
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := TokyoPro
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
