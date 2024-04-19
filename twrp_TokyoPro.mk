@@ -13,12 +13,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/TCL/TokyoPro/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := TokyoPro
-PRODUCT_NAME := omni_TokyoPro
+PRODUCT_NAME := twrp_TokyoPro
 PRODUCT_BRAND := TECTOY
 PRODUCT_MODEL := TECTOY_5029Y
 PRODUCT_MANUFACTURER := TCL
