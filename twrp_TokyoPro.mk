@@ -9,7 +9,7 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from pokerp device
+# Inherit from TokyoPro device
 $(call inherit-product, device/TCL/TokyoPro/device.mk)
 
 # Inherit some common Omni stuff.
