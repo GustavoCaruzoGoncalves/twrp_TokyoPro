@@ -5,4 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/TCL/TokyoPro
+DEVICE_PATH := device/TCL/TokyoPro

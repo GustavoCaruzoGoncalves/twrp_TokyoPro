@@ -5,8 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := $(call my-dir)
-
 ifeq ($(TARGET_DEVICE),TokyoPro)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+include $(call all-subdir-makefiles,$(DEVICE_PATH))
 endif
