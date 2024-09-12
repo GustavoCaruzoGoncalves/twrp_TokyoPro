@@ -10,7 +10,6 @@ DEVICE_PATH := device/TCL/TokyoPro
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-
 #Security Patch Level
 PLATFORM_VERSION := 9.0.0
 PLATFORM_SECURITY_PATCH := 2022-12-05
@@ -30,7 +29,7 @@ TARGET_OTA_ASSERT_DEVICE := TokyoPro
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
+TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := cortex-a53
 
 TARGET_2ND_ARCH := arm

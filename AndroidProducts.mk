@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_TokyoPro.mk
+    $(LOCAL_DIR)/omni_TokyoPro.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_TokyoPro-user \
-    twrp_TokyoPro-userdebug \
-    twrp_TokyoPro-eng
+    omni_TokyoPro-user \
+    omni_TokyoPro-userdebug \
+    omni_TokyoPro-eng
